@@ -1,0 +1,112 @@
+@use './globals' as *;
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--custom-white);
+  color: var(--header-color-text);
+  padding: 0 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: top 3s ease-out;
+  z-index: 1000;
+}
+
+.header.fixed {
+  position: fixed;
+  top: 0;
+}
+
+.header.scrolled-down {
+  top: 10vh;
+}
+
+.header.hidden {
+  top: -100%;
+}
+
+.header-logo {
+  font-family: "Imperial Script", cursive;
+  font-weight: 500;
+  font-size: 2.5rem;
+  letter-spacing: .1rem;
+  text-wrap: nowrap;
+  padding: .2rem 0;
+}
+
+.navWrap {
+  display: flex;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .5rem;
+  margin-right: 2rem;
+}
+
+.nav-button {
+  position: relative;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: transparent;
+  color: inherit;
+  text-wrap: nowrap;
+  cursor: pointer;
+  transition: color 0.5s ease;
+}
+
+.nav-button::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: .1rem;
+  background-color: var(--header-color-text);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.5s ease;
+}
+
+.nav-button:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.languageSelector {
+  position: relative;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 .5rem;
+}
+
+.languageButton {    
+  cursor: pointer;
+}
+
+.languageMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+}
+
+.languageOption {
+  margin: .2rem 0;
+  cursor: pointer;
+}

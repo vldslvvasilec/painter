@@ -1,0 +1,11 @@
+{
+  "header": {
+    "home": "Accueil",
+    "about": "À propos",
+    "contacts": "Contacts",
+    "gallery": "Galerie"
+  },
+  "title": "Bienvenue sur Artist !",
+  "description": "Un lieu pour les artistes et leur créativité.",
+  "language": "Langue"
+}
