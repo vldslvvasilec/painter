@@ -35,7 +35,7 @@ export async function GET(req: NextRequest) {
       status: 200,
       headers: { "Content-Type": "application/json" },
     });
-  } catch (error) {
+  } catch {
     return new Response(JSON.stringify({ valid: false }), {
       status: 200,
       headers: { "Content-Type": "application/json" },

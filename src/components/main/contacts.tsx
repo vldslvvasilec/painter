@@ -41,7 +41,7 @@ export default function Contacts() {
       const response = await fetch(`/api/validateEmail?email=${encodeURIComponent(email)}`);
       const result = await response.json();
       setEmailError(result.valid ? null : t("contacts.invalid_email"));
-    } catch (error) {
+    } catch {
       setEmailError(t("contacts.invalid_email"));
     }
   };
@@ -78,7 +78,7 @@ export default function Contacts() {
         setStatus("error");
         setTimeout(() => setStatus(null), 5000);
       }
-    } catch (error) {
+    } catch {
       setStatus("error");
       setTimeout(() => setStatus(null), 5000);
     }

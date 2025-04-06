@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa"; // Импортируем иконки
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import Image from "next/image";
 
 const images = [
   "/1.webp",
@@ -16,10 +17,9 @@ const images = [
 export default function Gallery() {
   const { t } = useTranslation();
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [imagesToDisplay, setImagesToDisplay] = useState(3); // Состояние для количества картинок
+  const [imagesToDisplay, setImagesToDisplay] = useState(3);
 
   useEffect(() => {
-    // Устанавливаем количество изображений в зависимости от ширины экрана
     const updateImagesToDisplay = () => {
       if (window.innerWidth <= 550) {
         setImagesToDisplay(1);
@@ -28,16 +28,10 @@ export default function Gallery() {
       }
     };
 
-    updateImagesToDisplay(); // Вызовем при монтировании компонента
-
-    // Добавим обработчик для изменения размера экрана
+    updateImagesToDisplay();
     window.addEventListener("resize", updateImagesToDisplay);
-
-    // Очистим обработчик при размонтировании компонента
-    return () => {
-      window.removeEventListener("resize", updateImagesToDisplay);
-    };
-  }, []); // Пустой массив зависимостей, чтобы выполнить только один раз при монтировании
+    return () => window.removeEventListener("resize", updateImagesToDisplay);
+  }, []);
 
   const handlePrev = () => {
     if (currentIndex > 0) {
@@ -53,18 +47,26 @@ export default function Gallery() {
 
   return (
     <section id="gallery" className="gallery">
-      <h1 className="gallery-title">{t('gallery_title')}</h1>
+      <h1 className="gallery-title">{t("gallery_title")}</h1>
       <section className="gallery-container">
         <button
           className={`arrow-button left ${currentIndex === 0 ? "disabled" : ""}`}
           onClick={handlePrev}
         >
-          <FaArrowLeft /> {/* Стрелка влево */}
+          <FaArrowLeft />
         </button>
 
         <section className="images-container">
           {images.slice(currentIndex, currentIndex + imagesToDisplay).map((image, index) => (
-            <img key={index} src={image} alt={`Gallery item ${index + 1}`} />
+            <div key={index} style={{ position: "relative", width: "100%", height: "250px" }}>
+              <Image
+                src={image}
+                alt={`Gallery item ${index + 1}`}
+                fill
+                style={{ objectFit: "cover" }}
+                sizes="(max-width: 550px) 100vw, 33vw"
+              />
+            </div>
           ))}
         </section>
 
@@ -74,7 +76,7 @@ export default function Gallery() {
           }`}
           onClick={handleNext}
         >
-          <FaArrowRight /> {/* Стрелка вправо */}
+          <FaArrowRight />
         </button>
       </section>
     </section>

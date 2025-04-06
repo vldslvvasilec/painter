@@ -13,7 +13,7 @@ export default function MinMenu({ isOpen, setOpen }: MinMenuProps) {
   return (
     <section className={`menu min-menu ${isOpen ? "open" : ""}`}>
       <Nav closeMenu={closeMenu} />
-      <LangChanger closeMenu={closeMenu} />
+      <LangChanger />
     </section>
   );
 }

@@ -5,11 +5,7 @@ import { useState, useRef, useEffect } from "react";
 import i18n from "@/i18n";
 import Cookies from "js-cookie";
 
-interface LangChangerProps {
-  closeMenu?: () => void;
-}
-
-export default function LangChanger({ closeMenu }: LangChangerProps) {
+export default function LangChanger() {
   const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
