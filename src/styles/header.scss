@@ -6,19 +6,33 @@ header {
   align-items: center;
   justify-content: space-between;
   background-color: var(--custom-white);
-  color: var(--header-color-text);
+  color: var(--custom-white);
   padding: 0 1rem;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  transition: top 3s ease-out;
   z-index: 1000;
+  transition: transform .5s ease-out, opacity .5s ease-out;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/logoBg.jpg') center/cover no-repeat;
+    opacity: .7;
+    filter: blur(1px);
+    z-index: -1;
+    box-shadow: inset 0px -20px 40px rgba(255, 255, 255, .8);
+  }
 }
 
 .header.fixed {
+  opacity: 1;
+  transform: translateY(0);
   position: fixed;
-  top: 0;
 }
 
 .header.scrolled-down {
@@ -26,22 +40,39 @@ header {
 }
 
 .header.hidden {
-  top: -100%;
+  opacity: 0;
+  transform: translateY(-100%);
 }
 
 .header-logo {
-  font-family: "Imperial Script", cursive;
+  position: relative;
+  font-family: "Imperial Script";
   font-weight: 500;
   font-size: 2.5rem;
-  letter-spacing: .1rem;
+  letter-spacing: .3rem;
   text-wrap: nowrap;
-  padding: .2rem 0;
+  padding: .1rem .5rem;
+  color: var(--custom-white);
+  h1 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    span {
+      text-align: right;
+      display: block;
+    }
+  }
+
 }
 
 .navWrap {
   display: flex;
   font-family: "Rubik", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 nav {
@@ -61,6 +92,7 @@ nav {
   background: transparent;
   color: inherit;
   text-wrap: nowrap;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   cursor: pointer;
   transition: color 0.5s ease;
 }
@@ -72,7 +104,7 @@ nav {
   left: 0;
   width: 100%;
   height: .1rem;
-  background-color: var(--header-color-text);
+  background-color: var(--custom-white);
   transform: scaleX(0);
   transform-origin: bottom right;
   transition: transform 0.5s ease;
@@ -93,6 +125,7 @@ nav {
   font-weight: 400;
   text-align: center;
   margin: 0 .5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .languageButton {    
@@ -103,10 +136,21 @@ nav {
   position: absolute;
   top: 100%;
   left: 0;
+  text-shadow: 
+    0.5px 0.5px 0 #3d3d3d, 
+    -0.5px -0.5px 0 #3d3d3d,
+    0.5px -0.5px 0 #3d3d3d,
+    -0.5px 0.5px 0 #3d3d3d;
   z-index: 10;
 }
 
 .languageOption {
   margin: .2rem 0;
   cursor: pointer;
+}
+
+@media screen and (max-width: 375px) {
+  .header-logo {
+    font-size: 2rem;
+  }
 }

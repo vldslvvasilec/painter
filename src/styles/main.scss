@@ -1,5 +1,16 @@
+@use "./main/home" as home;
+@use "./main/galery" as galery;
+@use "./main/about" as about;
+@use "./main/contacts" as contacts;
+
 main {
-    margin-top: 10vh;
+    margin-top: 20vh;
+    font-family: "Rubik", sans-serif;
+    color: var(--header-color-text);
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .page-block {
     min-height: 100vh;

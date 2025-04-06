@@ -5,7 +5,24 @@
     "contacts": "Kontakte",
     "gallery": "Galerie"
   },
-  "title": "Willkommen bei Artist!",
-  "description": "Ein Ort für Künstler und ihre Kreativität.",
-  "language": "Sprache"
+  "texts": {
+    "top-text": "In der Welt der Kunst gibt es keine strengen Regeln oder Einschränkungen. Nur Emotionen, Farben, Licht und Schatten, die sich in einem endlosen Tanz der Kreativität verweben und etwas Einzigartiges und Inspirierendes erschaffen.",
+    "text-1": "Das Leben ist wie eine leere Leinwand, auf der jeder Tag seinen eigenen Pinselstrich hinterlässt. Manche sind kräftig und leuchtend, andere sanft und unauffällig – doch gemeinsam formen sie das Meisterwerk deines Schicksals. Wie wird dein Kunstwerk aussehen?",
+    "text-2": "Chaos ist nur eine verborgene Form der Ordnung, die nicht sofort erkennbar ist. In jeder scheinbar zufälligen Anordnung von Linien und Farben verbirgt sich eine besondere Harmonie, die nur ein Künstler wahrnehmen kann – eine Schönheit, die anderen als bloßer Zufall erscheint."
+  },
+  "about": "Der geheimnisvolle Schatten von Fyshin, so wurde er in den 60er Jahren in engen künstlerischen Kreisen genannt.\n\nEin Treffen im Alter von 12 Jahren und ein Meisterkurs von Nikolai Fyshin in Santa Monica, Kalifornien, veränderten sein Leben für immer. Beide Eltern waren Biologen und arbeiteten mehrere Jahre in Amerika.\n\nSpäter stellte sich heraus, dass er fast der einzige Schüler aus Russland war, der vom Meister selbst anerkannt wurde, und der Meister erwähnte sein Talent oft in Gesprächen mit Amerikanern. Später gab es eine kurze Freundschaft und Korrespondenz mit Albert Londravil und Joseph Nordman, amerikanischen Studenten und direkten Schülern von Nikolai Fyshin.\n\nAus den Erinnerungen von Londravil: 'An einem gewöhnlichen Wintermorgen tauchte ein sehr junger Junge, Philip, in unserem Atelier auf; seine Eltern stammten aus Russland. Der Meister war begeistert, wie dieser junge Mann seine Welt auf der Leinwand erschuf.'... 'Philip wurde als Künstler geboren' — diese Worte kamen direkt von Fyshin.\n\nAls Student der Surikov-Schule war er der einzige, der das gute Andenken des Meisters unterstützte, als andere es beschmutzten.\n\nTrotzdem führte sein Talent ihn zum Manege, und bald darauf die skandalöse Schließung der Ausstellung.\n\nDann folgte seine Ausweisung aus dem Künstlerbund aufgrund seiner Solidarität mit dem Erbe des Meisters und seiner pro-westlichen Ansichten und Stil.\n\nEine Ausstellung im Haus der Künstler und der Kauf der gesamten Sammlung durch einen privaten Sammler aus Amsterdam. Der geheimnisvollste und zurückhaltendste Russe außerhalb seiner Heimat.\n\nEmigration, Vergessenheit und das Schweigen des Künstlers für mehrere Jahrzehnten.\n\nDas Geheimnis privater Sammlungen.\n\nIm 21. Jahrhundert, ohne Computer und Internet. Ein Mobiltelefon mit Tasten ist sein einziges Fenster zur Zivilisation.\n\nDas Leben als Einsiedler. Ein abgelegenes Dorf wurde der letzte Zufluchtsort des Eremiten des Reiches. Der Meister zog sich mit seinem Schüler in ein kleines Dorf in den slowakischen Tatra zurück. Sie entwickelten das Konzept 'Nuevo Sol' und erschaffen auf Bestellung Gemälde für einen sehr engen Kreis, mit der Bedingung, diese Werke nicht in sozialen Netzwerken zu zeigen.",  
+  "gallery_title": "Galerie",
+  "contacts": {
+    "title": "Kontaktieren Sie uns",
+    "name": "Name:",
+    "email": "Email:",
+    "message": "Nachricht:",
+    "send": "Senden",
+    "invalid_email": "Ungültige E-Mail",
+    "enter_name": "Geben Sie Ihren Namen ein",
+    "enter_message": "Geben Sie Ihre Nachricht ein",
+    "sent": "Nachricht gesendet!",
+    "error": "Sende Fehler, bitte versuchen Sie es erneut.",
+    "network_error": "Netzwerkfehler. Überprüfen Sie Ihre Verbindung."
+  }
 }

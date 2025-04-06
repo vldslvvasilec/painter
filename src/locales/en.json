@@ -5,7 +5,24 @@
     "contacts": "Contacts",
     "gallery": "Gallery"
   },
-  "title": "Welcome to Artist!",
-  "description": "A place for artists and their creativity.",
-  "language": "Language"
+  "texts": {
+    "top-text": "In the world of art, there are no strict rules or limitations. Only emotions, colors, light, and shadows intertwining in an endless dance of creativity, giving birth to something unique and inspiring.",
+    "text-1": "Life is like a blank canvas, where each day leaves its brushstroke. Some are bold and bright, while others are subtle and delicate, yet together they form the masterpiece of your destiny. What will your creation be?",
+    "text-2": "Chaos is merely an undiscovered form of order, not immediately visible to the eye. Within every seemingly random arrangement of lines and colors, a unique harmony is hidden—one that only an artist can perceive, finding beauty in what others see as mere coincidence."
+  },
+  "about": "The mysterious shadow of Fyshin, that's how he was called in the 60s in narrow artistic circles.\n\nA meeting at the age of 12 and a masterclass by Nikolai Fyshin in Santa Monica, California, forever changed his life. Both of his parents were biologists and worked in America for several years.\n\nIt later turned out that he was almost the only student from Russia recognized by the master himself, and the maestro often mentioned his talent in conversations with Americans. Later, there was a short friendship and correspondence with Albert Londravil and Joseph Nordman, American students and direct pupils of Nikolai Fyshin.\n\nFrom Londravil's recollections: 'On a typical winter morning in our studio, a very young boy, Philip, appeared; his parents were from Russia. The master was amazed by how this young man created his world on the canvas.'... 'Philip was born an artist' — these were the words of Fyshin himself.\n\nAs a student at the Surikov School, he was the only one who supported the good memory of the master when others were tarnishing it.\n\nNevertheless, his talent led him to the Manege, and soon after, a scandalous closure of the exhibition.\n\nThen followed his expulsion from the Union of Artists for his solidarity with the master's legacy and his pro-Western views and style.\n\nAn exhibition at the House of Artists and the purchase of the entire collection by a private collector from Amsterdam. The most secretive and mysterious Russian beyond his homeland.\n\nEmigration, oblivion, and the silence of the artist for several decades.\n\nThe mystery of private collections.\n\nIn the 21st century, without a computer or the internet. A mobile phone with buttons is his only window to civilization.\n\nReclusiveness. A remote village became the final refuge of the hermit of the empire. The master secluded himself from the aggressive world with his student in a small village in the Slovak Tatra Mountains. They came up with the concept of 'Nuevo Sol' and create paintings on commission for a very narrow circle, with the condition not to display these creations on social networks.",
+  "gallery_title": "Gallery",
+  "contacts": {
+    "title": "Contact Us",
+    "name": "Name:",
+    "email": "Email:",
+    "message": "Message:",
+    "send": "Send",
+    "invalid_email": "Invalid email",
+    "enter_name": "Enter your name",
+    "enter_message": "Enter your message",
+    "sent": "Message sent!",
+    "error": "Sending error, please try again.",
+    "network_error": "Network error. Check your connection."
+  }
 }

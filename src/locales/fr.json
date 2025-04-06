@@ -5,7 +5,24 @@
     "contacts": "Contacts",
     "gallery": "Galerie"
   },
-  "title": "Bienvenue sur Artist !",
-  "description": "Un lieu pour les artistes et leur créativité.",
-  "language": "Langue"
+  "texts": {
+    "top-text": "Dans le monde de l’art, il n’existe ni règles strictes ni limites. Seulement des émotions, des couleurs, des jeux de lumière et d’ombres qui s’entrelacent dans une danse infinie de créativité, donnant naissance à quelque chose d’unique et d’inspirant.",
+    "text-1": "La vie est comme une toile vierge où chaque jour laisse son propre coup de pinceau. Certains sont vifs et éclatants, d’autres doux et délicats, mais ensemble, ils forment le chef-d'œuvre de ton destin. À quoi ressemblera ta création ?",
+    "text-2": "Le chaos n’est qu’une forme d’ordre encore inexplorée, imperceptible à première vue. Derrière chaque apparente confusion de lignes et de couleurs se cache une harmonie subtile, que seul un artiste peut percevoir, trouvant la beauté là où d’autres ne voient que hasard et désordre."
+  },
+  "about": "L'ombre mystérieuse de Fyshin, c'est ainsi qu'il était appelé dans les cercles artistiques restreints des années 60.\n\nUne rencontre à 12 ans et un cours magistral de Nikolai Fyshin à Santa Monica, en Californie, ont changé sa vie à jamais. Ses deux parents étaient biologistes et ont travaillé plusieurs années en Amérique.\n\nIl s'est ensuite avéré qu'il était presque le seul élève russe reconnu par le maître lui-même, et ce dernier a souvent mentionné son talent dans ses conversations avec des Américains. Plus tard, il y eut une brève amitié et correspondance avec Albert Londravil et Joseph Nordman, des étudiants américains et des élèves directs de Nikolai Fyshin.\n\nD'après les souvenirs de Londravil : « Un matin d'hiver ordinaire, un jeune garçon, Philip, est arrivé dans notre atelier ; ses parents étaient russes. Le maître était émerveillé de voir comment ce jeune homme créait son propre monde sur la toile. »... « Philip est né artiste » — ce sont les mots de Fyshin lui-même.\n\nEn tant qu'étudiant à l'école Surikov, il a été le seul à soutenir la bonne mémoire du maître lorsque d'autres l'ont salie.\n\nCependant, son talent l'a mené au Manege, où une fermeture scandaleuse de l'exposition a suivi.\n\nIl a ensuite été expulsé de l'Union des artistes pour sa solidarité avec l'héritage du maître et pour ses vues et son style pro-occidentaux.\n\nUne exposition à la Maison des Artistes et l'achat de toute la collection par un collectionneur privé d'Amsterdam. Le Russe le plus secret et mystérieux en dehors de sa patrie.\n\nL'émigration, l'oubli et le silence de l'artiste pendant plusieurs décennies.\n\nLe mystère des collections privées.\n\nAu 21e siècle, sans ordinateur ni internet. Un téléphone portable à touches est sa seule fenêtre sur la civilisation.\n\nVie recluse. Un village éloigné est devenu le dernier refuge du ermite de l'empire. Le maître s'est réfugié avec son élève dans un petit village des Tatras slovaques. Ils ont créé le concept de 'Nuevo Sol' et réalisent des tableaux sur commande pour un cercle très restreint, avec la condition de ne pas exposer ces œuvres sur les réseaux sociaux.",  
+  "gallery_title": "Galerie",
+  "contacts": {
+    "title": "Contactez-nous",
+    "name": "Nom:",
+    "email": "Email:",
+    "message": "Message:",
+    "send": "Envoyer",
+    "invalid_email": "Email invalide",
+    "enter_name": "Entrez votre nom",
+    "enter_message": "Entrez votre message",
+    "sent": "Message envoyé!",
+    "error": "Erreur d'envoi, veuillez réessayer.",
+    "network_error": "Erreur réseau. Vérifiez votre connexion."
+  }
 }

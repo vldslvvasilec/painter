@@ -3,7 +3,15 @@
 
 :root {
     --custom-white: #f5f5f5;
-    --header-color-text: #0f0f0f;
+    --full-white: #fff;
+    --header-color-text: #3d3d3d;
+    --header-color-logo: #0c0c0c;
+    --gallery-button: #3d3d3d;
+    --gallery-button-dis: #929292;
+    --contacts-icon: #3d3d3d;
+    --contacts-icon-bg: #dadada;
+    --error-red: red;
+    --success-green: green;
 }
 
 * {
@@ -11,7 +19,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body {
+    overflow-x: hidden;
+}
 a {
     text-decoration: none;
 }

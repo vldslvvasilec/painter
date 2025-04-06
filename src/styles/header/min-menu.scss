@@ -1,0 +1,69 @@
+@use '../globals' as *;
+.hamburger-menu {
+    display: none;
+}
+.min-menu {
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 900;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--full-white);
+    display: none;
+    transition: left .5s ease-in-out;
+    &.open {
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navWrap {
+      display: none;
+    }
+    .hamburger-menu {
+      display: block;
+    }
+    .min-menu {
+        display: flex;
+        font-family: "Rubik", sans-serif;
+        font-weight: 400;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0;
+        
+    }
+    .languageSelector {
+        width: 20%;
+        margin: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .languageMenu {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1.5rem;
+        text-shadow: none;
+    }
+    .nav-button,
+    .languageButton,
+    .languageOption {
+        font-size: 1.2rem;
+    }
+  }
+@media screen and (max-width: 425px) {
+    .languageSelector {
+        width: 40%;
+    }
+}

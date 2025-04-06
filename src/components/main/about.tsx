@@ -1,7 +1,12 @@
+import { useTranslation } from "react-i18next";
 
 
 export default function About() {
+  const { t } = useTranslation();
   return (
-    <div id="about" className="page-block">About block</div>
+    <section id="about" className="about">
+      <h1 className="aboutTittle">Philippe Thorin</h1>
+      <p className="about-p">{t('about')}</p>
+    </section>
   )
 }

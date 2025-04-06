@@ -1,49 +1,58 @@
 "use client";
-import { useRouter } from "next/navigation";
-import i18next from "i18next";
-import { useState, useRef, useEffect } from "react";
 
-export default function LangChanger() {
+import { useRouter } from "next/navigation";
+import { useState, useRef, useEffect } from "react";
+import i18n from "@/i18n";
+import Cookies from "js-cookie";
+
+interface LangChangerProps {
+  closeMenu?: () => void;
+}
+
+export default function LangChanger({ closeMenu }: LangChangerProps) {
   const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
-  const currentLanguage = i18next.language;
+  const currentLanguage = i18n.language;
   const availableLanguages = ["en", "ru", "fr", "de"];
 
   const changeLanguage = (lang: string) => {
     if (lang === currentLanguage) {
       return;
     }
-    i18next.changeLanguage(lang);
+    i18n.changeLanguage(lang);
+    Cookies.set("language", lang, { expires: 365 }); // Записываем новый язык в куки
     router.refresh();
-    setIsOpen(false);
+    setIsOpen(false); // Закрываем меню после выбора языка
   };
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
-        setIsOpen(false);
+        setIsOpen(false); // Закрываем меню при клике вне его
       }
     };
 
     document.addEventListener("mousedown", handleClickOutside);
-
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
   const toggleMenu = () => {
-    setIsOpen((prevState) => !prevState); // Меняем состояние на противоположное (открыть/закрыть)
+    // Если меню закрыто, то открываем, если открыто — закрываем
+    setIsOpen((prevState) => !prevState);
   };
 
-  const formatLanguageName = (lang: string) => {
-    return lang.charAt(0).toUpperCase() + lang.slice(1).toLowerCase();
+  const formatLanguageName = (lang: string) =>
+    lang.charAt(0).toUpperCase() + lang.slice(1).toLowerCase();
+
+  const handleButtonClick = () => {
+    toggleMenu(); // Переключаем состояние меню
+    // Дополнительно можно добавить действия, которые нужно выполнить при нажатии на кнопку
   };
 
   return (
     <div className="languageSelector">
-      <button className="languageButton" onClick={toggleMenu}>
+      <button className="languageButton" onClick={handleButtonClick}>
         {formatLanguageName(currentLanguage)}
       </button>
       {isOpen && (
@@ -54,7 +63,7 @@ export default function LangChanger() {
               <button
                 key={lang}
                 className="languageOption"
-                onClick={() => changeLanguage(lang)}
+                onClick={() => changeLanguage(lang)} // Изменяем язык при клике
               >
                 {formatLanguageName(lang)}
               </button>
