@@ -36,14 +36,11 @@ export default function Nav({ closeMenu }: NavProps) {
 
   return (
     <nav>
-      <button className="nav-button" onClick={() => scrollToSection("home", true)}>
+      <button className="nav-button" onClick={() => scrollToSection("about", true)}>
         {t("header.home")}
       </button>
       <button className="nav-button" onClick={() => scrollToSection("gallery")}>
         {t("header.gallery")}
-      </button>
-      <button className="nav-button" onClick={() => scrollToSection("about")}>
-        {t("header.about")}
       </button>
       <button className="nav-button" onClick={() => scrollToSection("contacts")}>
         {t("header.contacts")}

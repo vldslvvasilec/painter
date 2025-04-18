@@ -9,9 +9,8 @@ export default function Page() {
 
   return (
     <main>
-      <Home />
-      <Gallery />
       <About />
+      <Gallery />
       <Contacts />
     </main>
   );
