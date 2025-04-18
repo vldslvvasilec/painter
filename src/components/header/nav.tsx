@@ -19,7 +19,9 @@ export default function Nav({ closeMenu }: NavProps) {
       // Прокрутка до элемента с учетом отступа
       const element = document.getElementById(id);
       if (element) {
-        const offset = window.innerHeight * 0.17;
+        const screenWidth = window.innerWidth;
+        const offsetRatio = screenWidth < 600 ? 0.27 : 0.2;
+        const offset = window.innerHeight * offsetRatio;
         const position = element.offsetTop - offset;
 
         window.scrollTo({

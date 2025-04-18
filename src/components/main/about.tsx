@@ -55,7 +55,7 @@ export default function About() {
             dangerouslySetInnerHTML={{ __html: t('about.7p') }}
           />
         </section>
-        <h3 className="about-p about-subtitle">{t('about.8pt')}</h3>
+        <h3 className="about-subtitle">{t('about.8pt')}</h3>
         <p
           className="about-p"
           dangerouslySetInnerHTML={{ __html: t('about.9p') }}
