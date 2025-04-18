@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 header {
+  height: 5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -150,12 +151,15 @@ nav {
 }
 
 @media screen and (max-width: 600px) {
+  header {
+    height: 8rem;
+  }
   .header-logo {
     width: 70%;
     padding: .3rem .5rem;
     h1 {
       flex-direction: column;
-      font-size: 3rem;
+      font-size: 3.5rem;
       span {
         margin-left: 0;
         margin-top: .5rem;

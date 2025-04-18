@@ -19,9 +19,13 @@ export default function Nav({ closeMenu }: NavProps) {
       // Прокрутка до элемента с учетом отступа
       const element = document.getElementById(id);
       if (element) {
-        const screenWidth = window.innerWidth;
-        const offsetRatio = screenWidth < 600 ? 0.27 : 0.2;
-        const offset = window.innerHeight * offsetRatio;
+        // Получаем значение 1rem в пикселях
+        const remInPx = parseFloat(getComputedStyle(document.documentElement).fontSize);
+        
+        // Условный отступ в rem
+        const offsetRem = window.innerWidth < 600 ? 8 : 5; // 6rem или 4rem
+        const offset = offsetRem * remInPx;
+
         const position = element.offsetTop - offset;
 
         window.scrollTo({
